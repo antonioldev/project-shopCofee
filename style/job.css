@@ -1,0 +1,102 @@
+body{
+    overflow-x: hidden;
+}
+
+#slogan{
+    position: relative;
+    display: block;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 0px;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 120px;
+    border: solid 4px;
+    border-image-source: linear-gradient(white,grey);
+    background-image: -webkit-gradient(linear,left top, left bottom,from(white),to(#EEEDED));
+    background-image: linear-gradient(white,#EEEDED);
+    border-image-slice: 1 5 5 1;
+}
+#slogan h3{
+    font-size: 6vh;
+    color:darkgray;
+    text-shadow: 1px 1px rgba(36, 36, 36, 0.801);
+    padding:10px;
+    border: solid 3px;
+    border-image-source: linear-gradient(white,black,white);
+    border-image-slice: 0 0.1 10 0.1;
+}
+#slogan p{
+    margin: 5px;
+    font-size: 3vh;
+}
+#slogan2{
+    position: relative;
+    max-height: 454px;
+    min-height: 300px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 100px;
+    width: 70%;
+    background-image: url("../img/job.jpg") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;  
+
+}
+
+button{
+    margin: 10px;
+    background-color: grey;
+    border: 3px solid grey;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+button:hover{
+    background-color: whitesmoke;
+    color:black;
+    -webkit-box-shadow: 5px 5px 1px darkgray;
+            box-shadow: 5px 5px 1px darkgray;
+}
+form {
+    position: static;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    height: 0px;
+    width: 30%;
+    font-size: 20px;
+    visibility: hidden;
+    text-align: left;
+    overflow: hidden;
+}
+fieldset{
+    display: none;
+    margin: 0 auto;
+    padding: 0;
+}
+input{
+    margin: 5px;   
+    margin-bottom: 10px;
+}
+#applyNow{
+    padding-right: 4px;
+    background-color: grey;
+    border: 1px solid whitesmoke;
+    color: white;
+    -webkit-box-shadow: 2px 2px 5px 5px grey;
+            box-shadow: 2px 2px 5px 5px grey;
+    
+}
+
+.org{
+    width: 200px;
+    margin-right: 0;
+    margin-left: auto;
+    
+
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>COFFEE - Our menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="..\img\icon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/background.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/product.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../script/product.js"></script>
+    <script src="../script/checkScreen.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<body onload="checkScreen()">
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="top">
+        <ul>
+            <li class="menuNavigation"><a>#</a></li>
+            <li class="menuNavigation"><a href="main.html"> HOME</a></li>
+            <li class="menuNavigation"><a href="product.html"> PRODUCTS</a> </li>
+            <li class="menuNavigation"><a href="location.html"> STORES</a> </li>
+            <li class="menuNavigation"><a href="job.html"> JOBS</a></li>
+            <li class="menuNavigation"><a href="contact.html"> CONTACT</a></li>
+
+        </ul>
+
+    </div>
+
+
+
+    <div id="mainDiv">
+
+        <div id="main">
+            <img src="../img/product.jpg" alt="product">
+            <div id="main_right">
+                <h3>WHATEVER THE QUESTION</h3>
+                <h2>THE ANSWER IS COFFEE</h2>
+                <p>Seasonally changing menus and daily changing specials (check your local coffee's board). For
+                    allergens and special dietary needs, simply ask your server.</p>
+            </div>
+        </div>
+        <a href="#mainDiv"><img src="../img/backtotop.png" title="Back to top" alt="back to top" id="backToTop"></a>
+    </div>
+
+
+
+    <div id="leftBar">
+        <div id="menuShop">
+            <ul>
+                <li class="menuShopFolder"> <a href="#hotDrink">HOT DRINKS</a> </li>
+                <li class="menuShopFolder"> <a href="#coldDrink">COLD DRINK</a> </li>
+                <li class="menuShopFolder"> <a href="#cake">CAKES</a> </li>
+                <li class="menuShopFolder"> <a href="#breakfast">BREAKFAST</a> </li>
+                <li class="menuShopFolder"> <a href="#lunch">LUNCH</a> </li>
+                <li class="menuShopFolder"> <a href="#sandwich">SANDWICH</a> </li>
+            </ul>
+        </div>
+        <div id="offer">
+            <p id="dailyOffer"></p>
+            <p class="hideShow" id="hideShowOffer">OFFER</p>
+            <button id="hideOffer" type="button">X</button>
+        </div>
+        <div id="filter">
+            <p class="hideShow" id="hideShowFilter">FILTER</p>
+            <div>
+                <input type="checkbox" class="filterInput" id="vegetarianCheck"><span>VEGETARIAN</span>
+            </div>
+            <div>
+                <input type="checkbox" class="filterInput" id="veganCheck"><span>VEGAN</span></div>
+            <div>
+                <input type="checkbox" class="filterInput" id="glutenCheck"><span>GLUTEN FREE </span></div>
+            <div>
+                <input type="checkbox" class="filterInput" id="dairyCheck"><span>DAIRY FREE</span></div>
+            <button id="hideFilter" type="button">X</button>
+            <button id="applyFilter" type="button">APPLY</button>
+        </div>
+
+    </div>
+    <div id="rightBar">
+        <!--   <img src="../img/icon.ico" alt="logo" id="logo">-->
+        <div class="menu menu_Drink" id="menu_HotDrink">
+
+            <div> <a name="hotDrink"></a>
+                <p>Espresso............ 2.00</p>
+                <p>Macchiato........... 2.50</p>
+                <p>Cappuccino.......... 3.00</p>
+            </div>
+            <div>
+                <p> Latte............... 3.00</p>
+                <p> Flat white.......... 2.75</p>
+                <p>Americano........... 3.00</p>
+            </div>
+            <div class="spot"> *Non diary milk available*<br> - Soy - Almond - Oat -Coconut - </div>
+        </div>
+
+
+        <div class="menu menu_Drink" id="menu_ColdDrink">
+            <div><a name="coldDrink"></a>
+                <p> Fresh orange juice............ 2.00</p>
+                <p> Fresh apple juice........... 2.50</p>
+                <p> Ginger shot.......... 3.00</p>
+            </div>
+            <div>
+                <p> Coke............... 1.50</p>
+                <p> Still water.......... 1.25</p>
+                <p> Coconut water........... 2.00</p>
+            </div>
+
+        </div>
+
+
+        <div class="menu menu_Food" id="menu_Cake">
+            <div class="spot">Have you tried yet our homemade cakes? </div>
+            <div><a name="cake"></a>
+                <p class="foodItem vegetarian"> Carrot cake</p>
+                <p class="foodItem vegetarian vegan"> Chocolate cake</p>
+                <p class="foodItem vegetarian"> Red velvet cake</p>
+            </div>
+            <div>
+                <p class="foodItem vegetarian dairy"> Apple crumble cake</p>
+                <p class="foodItem vegetarian"> Lemon drizzle cake</p>
+                <p class="foodItem vegetarian gluten"> Rasberry bakewell cake</p>
+            </div>
+            <div id="price">3.50</div>
+
+        </div>
+
+
+        <div class="menu menu_Food" id="menu_Breakfast">
+            <div class="spot">Shake Up Your Wake Up </div>
+            <div><a name="breakfast"></a>
+                <p class="foodItem ">The classic breakfast</p>
+                <p class="foodItem dairy">Eggs benedict</p>
+                <p class="foodItem ">Buttermilk pancakes & bacon</p>
+                <p class="foodItem ">Chicken, bacon & waffles</p>
+            </div>
+            <div>
+                <p class="foodItem vegetarian">The veggie breakfast</p>
+                <p class="foodItem vegetarian dairy">Buttermilk pancakes & fruit</p>
+                <p class="foodItem vegetarian">Eggs mediterranean</p>
+                <p class="foodItem vegetarian dairy gluten">Spicy sweetcorn fritters</p>
+            </div>
+            <div>
+                <p class="foodItem vegan vegetarian dairy">The vegan breakfast</p>
+                <p class="foodItem vegan vegetarian dairy">Gingerbread waffles</p>
+                <p class="foodItem vegan vegetarian dairy gluten">Avocado and baked tofu strips</p>
+                <p class="foodItem vegan vegetarian dairy">Greek chickpeas on toast</p>
+            </div>
+            <div id="price">from 3.95</div>
+            <a name="coffe"></a>
+
+        </div>
+
+
+        <div class="menu menu_Food" id="menu_Lunch">
+            <div class="spot">On your lunch break</div>
+            <div> <a name="lunch"></a>
+                <p>RICE AND VEGGIE WITH</p>
+                <p class="foodItem dairy gluten">Thai green chicken</p>
+                <p class="foodItem gluten">Beef stew</p>
+                <p class="foodItem dairy ">Mustardy pork & apples</p>
+                <p class="foodItem vegan vegetarian dairy gluten">Sweet potato and beans stew</p>
+                <p>6.60</p>
+            </div>
+            <div>
+                <p>SALAD</p>
+                <p class="foodItem vegetarian gluten">Greek salad</p>
+                <p class="foodItem vegan vegetarian dairy gluten">Beetroot and chickpeas salad</p>
+                <p class="foodItem vegetarian gluten">Chicken ceaser salad</p>
+                <p class="foodItem vegetarian dairy gluten">Roasted beetroot & egg salad</p>
+                <p>3.95</p>
+            </div>
+            <div>
+                <p>QUICHE</p>
+                <p class="foodItem vegetarian gluten">Roasted veg</p>
+                <p class="foodItem vegetarian gluten">Feta and leek</p>
+                <p class="foodItem gluten">Ham and cheese</p>
+                <p class="foodItem vegetarian">Mushroom and onion</p>
+                <p>4.60</p>
+            </div>
+        </div>
+
+
+        <div class="menu menu_Food" id="menu_Sandwich">
+            <div class="spot">On the go </div>
+            <div><a name="sandwich"></a>
+                <p class="foodItem dairy gluten">Chicken guacamole wrap</p>
+                <p class="foodItem vegan vegetarian dairy gluten">Falafel wrap</p>
+                <p class="foodItem dairy">Bbq beef wrap</p>
+                <p class="foodItem vegetarian gluten">Egg salad wrap</p>
+            </div>
+            <div>
+                <p class="foodItem vegetarian ">Mozzarella pesto ciabatta</p>
+                <p class="foodItem ">Chicken parmesan ciabatta</p>
+                <p class="foodItem vegetarian">Salmon and cheese bagel </p>
+                <p class="foodItem vegan vegetarian dairy ">Guacamole bagel</p>
+            </div>
+            <div>
+                <p class="foodItem ">Ham, cheese and mustard baguette</p>
+                <p class="foodItem ">Bacon and brie baguette</p>
+                <p class="foodItem vegetarian dairy">Tuna baguette</p>
+                <p class="foodItem vegan vegetarian dairy gluten">Tofu and avocado gf baguette</p>
+            </div>
+            <div id="price">from 4.95</div>
+            <a name="sandwich"></a>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="one">
+            <ul id="footer_left">
+                <li><a href="main.html"> Home</a></li>
+                <li><a href="product.html"> Products</a> </li>
+                <li><a href="location.html"> Stores</a> </li>
+                <li><a href="job.html"> Jobs</a></li>
+                <li><a href="contact.html"> Contact us</a></li>
+            </ul>
+        </div>
+        <div id="footer_right">
+            <p id="followUs">follow us
+                <a href="https://www.facebook.com" target="_blank"><img class="logo" src="../img/logo/facebook.png"
+                        alt="Facebook"></a>
+                <a href="https://www.twitter.com" target="_blank"><img class="logo" src="../img/logo/twitter.png"
+                        alt="Twitter"></a>
+                <a href="https://www.instagram.com" target="_blank"><img class="logo" src="../img/logo/instagram.jpg"
+                        alt="Instagram"></a></p>
+        </div>
+
+        <div id="copyright">
+            <small> &#9400; Coffee ltd. 2019. All rights reserved</small>
+        </div>
+    </div>
+</body>
+
+</html>
