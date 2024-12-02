@@ -2,460 +2,446 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>COFFEE - Our shops</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="..\img\icon.ico">
-    <link rel="stylesheet" type="text/css" media="screen" href="../style/background.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="../style/store.css">
-    <script src="../script/storesDetails.js"></script>
-    <script src="../script/stores.js"></script>
-    <script src="../script/storesShowDetails.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../script/checkScreen.js"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>COFFEE - Our shops</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="..\img\icon.ico">
+	<link rel="stylesheet" type="text/css" media="screen" href="../style/zBackground.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../style/location.css">
+	<script src="../script/storesDetails.js"></script>
+	<script src="../script/stores.js"></script>
+	<script src="../script/storesShowDetails.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../script/checkScreen.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 </head>
 
 <body onload=" checkScreen();getLocation()">
-    <div id="left"></div>
-    <div id="right"></div>
-    <div id="top">
-        <ul>
-                <li class="menuNavigation"><a>#</a></li>
-                <li class="menuNavigation"><a href="main.html"> HOME</a></li>
-                <li class="menuNavigation"><a href="product.html"> PRODUCTS</a> </li>
-                <li class="menuNavigation"><a href="location.html"> STORES</a> </li>
-                <li class="menuNavigation"><a href="job.html"> JOBS</a></li>
-                <li class="menuNavigation"><a href="contact.html"> CONTACT</a></li>
-    
-        </ul>
-    </div>
-    <img src="../img/icon.ico" alt="logo" id="logo">
-    <div id="main">
-        <p>FIND A COFFEE HOUSE</p><br>
-        <p>There are few shops in London. Find your closest Coffee House below.</p>
-    </div>
-    <div id="main_2">
-        <!-- Start box -->
-        <div class="shops" id="one">
-            <div class="shopName">
-                <label for="rotate_0">
-                    <input type="checkbox" id="rotate_0" onclick="showMoreDetails_0();">
-                    <img alt="more" id="moreInfoImageButton_0" src="../img/more3.png" title="More info">
-                </label>
+	<div id="overlay"></div>
+	<div id="left"></div>
+	<div id="right"></div>
+	<div id="top">
+		<ul>
+				<li class="menuNavigation"><a>#</a></li>
+				<li class="menuNavigation"><a href="main.html"> HOME</a></li>
+				<li class="menuNavigation"><a href="product.html"> PRODUCTS</a> </li>
+				<li class="menuNavigation"><a href="location.html"> STORES</a> </li>
+				<li class="menuNavigation"><a href="job.html"> JOBS</a></li>
+				<li class="menuNavigation"><a href="contact.html"> CONTACT</a></li>
+	
+		</ul>
+	</div>
+	<img src="../img/icon.ico" alt="logo" id="logo">
+	<div id="main">
+		<p>FIND A COFFEE HOUSE</p><br>
+		<p>There are few shops in London. Find your closest Coffee House below.</p>
+	</div>
+	<div id="main_2">
+		<!-- Start box -->
+		<div class="shops" id="one">
+			<div class="shopName">
+				<label for="rotate_0">
+					<input type="checkbox" id="rotate_0" onclick="showMoreDetails_0();">
+					<img alt="more" id="moreInfoImageButton_0" src="../img/more3.png" title="More info">
+				</label>
 
-                <p class="locationName" id="locationName_0"></p>
-                <p class="locationDistance" id="locationDistance_0"></p>
-            </div>
+				<p class="locationName" id="locationName_0"></p>
+				<p class="locationDistance" id="locationDistance_0"></p>
+			</div>
 
-            <div class="info" id="info_0">
-                <div class="infoExtra1">
-                    <p id="street_0"></p>
-                    <p id="city_0"></p>
-                    <p id="postcode_0"></p>
-                    <p id="telephone_0"></p>
-                    <p id="openNow_0"></p>
-                </div>
-                <div class="infoExtra2">
-                    <table>
-                        <tr>
-                            <th colspan="2">FACILITIES</th>
-                        </tr>
-                        <tr>
-                            <td>Wi-fi</td>
-                            <td id="wifi_0"></td>
-                        </tr>
-                        <tr>
-                            <td>Delivery</td>
-                            <td id="delivery_0"></td>
-                        </tr>
-                        <tr>
-                            <td>Seat</td>
-                            <td id="seat_0"></td>
-                        </tr>
-                    </table>
+			<div class="info" id="info_0">
+				<div class="infoExtra1">
+					<p id="street_0"></p>
+					<p id="city_0"></p>
+					<p id="postcode_0"></p>
+					<p id="telephone_0"></p>
+					<p id="openNow_0"></p>
+				</div>
+				<div class="infoExtra2">
+					<table>
+						<tr>
+							<th colspan="2">FACILITIES</th>
+						</tr>
+						<tr>
+							<td>Wi-fi</td>
+							<td id="wifi_0"></td>
+						</tr>
+						<tr>
+							<td>Delivery</td>
+							<td id="delivery_0"></td>
+						</tr>
+						<tr>
+							<td>Seat</td>
+							<td id="seat_0"></td>
+						</tr>
+					</table>
 
-                    <table>
-                        <tr>
-                            <th colspan="2">OPENING TIMES</th>
-                        </tr>
-                        <tr>
-                            <td>Monday</td>
-                            <td id="monday_0"></td>
-                        </tr>
-                        <tr>
-                            <td>Tueasday</td>
-                            <td id="tuesday_0"></td>
-                        </tr>
-                        <tr>
-                            <td>Wednesday</td>
-                            <td id="wednesday_0"></td>
-                        </tr>
-                        <tr>
-                            <td>Thursday</td>
-                            <td id="thursday_0"></td>
-                        </tr>
-                        <tr>
-                            <td>Friday</td>
-                            <td id="friday_0"></td>
-                        </tr>
-                        <tr>
-                            <td>Saturday</td>
-                            <td id="saturday_0"></td>
-                        </tr>
-                        <tr>
-                            <td>Sunday</td>
-                            <td id="sunday_0"></td>
-                        </tr>
-                    </table>
-                </div>
+					<table>
+						<tr>
+							<th colspan="2">OPENING TIMES</th>
+						</tr>
+						<tr>
+							<td>Monday</td>
+							<td id="monday_0"></td>
+						</tr>
+						<tr>
+							<td>Tueasday</td>
+							<td id="tuesday_0"></td>
+						</tr>
+						<tr>
+							<td>Wednesday</td>
+							<td id="wednesday_0"></td>
+						</tr>
+						<tr>
+							<td>Thursday</td>
+							<td id="thursday_0"></td>
+						</tr>
+						<tr>
+							<td>Friday</td>
+							<td id="friday_0"></td>
+						</tr>
+						<tr>
+							<td>Saturday</td>
+							<td id="saturday_0"></td>
+						</tr>
+						<tr>
+							<td>Sunday</td>
+							<td id="sunday_0"></td>
+						</tr>
+					</table>
+				</div>
 
-            </div>
-            <div class="map" id="map_0"></div>
-        </div>
+			</div>
+			<div class="map" id="map_0"></div>
+		</div>
 
-        <!-- Start box -->
-        <div class="shops" id="two">
-            <div class="shopName">
-                <label for="rotate_1">
-                    <input type="checkbox" id="rotate_1" onclick="showMoreDetails_1();">
-                    <img alt="more" id="moreInfoImageButton_1" src="../img/more3.png" title="More">
-                </label>
+		<!-- Start box -->
+		<div class="shops" id="two">
+			<div class="shopName">
+				<label for="rotate_1">
+					<input type="checkbox" id="rotate_1" onclick="showMoreDetails_1();">
+					<img alt="more" id="moreInfoImageButton_1" src="../img/more3.png" title="More">
+				</label>
 
-                <p class="locationName" id="locationName_1"></p>
-                <p class="locationDistance" id="locationDistance_1"></p>
-            </div>
+				<p class="locationName" id="locationName_1"></p>
+				<p class="locationDistance" id="locationDistance_1"></p>
+			</div>
 
-            <div class="info" id="info_1">
-                <div class="infoExtra1">
-                    <p id="street_1"></p>
-                    <p id="city_1"></p>
-                    <p id="postcode_1"></p>
-                    <p id="telephone_1"></p>
-                    <p id="openNow_1"></p><!-- need to create function for open now-->
-                </div>
-                <div class="infoExtra2">
-                    <table>
-                        <tr>
-                            <th colspan="2">FACILITIES</th>
-                        </tr>
-                        <tr>
-                            <td>Wi-fi</td>
-                            <td id="wifi_1"></td>
-                        </tr>
-                        <tr>
-                            <td>Delivery</td>
-                            <td id="delivery_1"></td>
-                        </tr>
-                        <tr>
-                            <td>Seat</td>
-                            <td id="seat_1"></td>
-                        </tr>
-                    </table>
+			<div class="info" id="info_1">
+				<div class="infoExtra1">
+					<p id="street_1"></p>
+					<p id="city_1"></p>
+					<p id="postcode_1"></p>
+					<p id="telephone_1"></p>
+					<p id="openNow_1"></p><!-- need to create function for open now-->
+				</div>
+				<div class="infoExtra2">
+					<table>
+						<tr>
+							<th colspan="2">FACILITIES</th>
+						</tr>
+						<tr>
+							<td>Wi-fi</td>
+							<td id="wifi_1"></td>
+						</tr>
+						<tr>
+							<td>Delivery</td>
+							<td id="delivery_1"></td>
+						</tr>
+						<tr>
+							<td>Seat</td>
+							<td id="seat_1"></td>
+						</tr>
+					</table>
 
-                    <table>
-                        <tr>
-                            <th colspan="2">OPENING TIMES</th>
-                        </tr>
-                        <tr>
-                            <td>Monday</td>
-                            <td id="monday_1"></td>
-                        </tr>
-                        <tr>
-                            <td>Tueasday</td>
-                            <td id="tuesday_1"></td>
-                        </tr>
-                        <tr>
-                            <td>Wednesday</td>
-                            <td id="wednesday_1"></td>
-                        </tr>
-                        <tr>
-                            <td>Thursday</td>
-                            <td id="thursday_1"></td>
-                        </tr>
-                        <tr>
-                            <td>Friday</td>
-                            <td id="friday_1"></td>
-                        </tr>
-                        <tr>
-                            <td>Saturday</td>
-                            <td id="saturday_1"></td>
-                        </tr>
-                        <tr>
-                            <td>Sunday</td>
-                            <td id="sunday_1"></td>
-                        </tr>
-                    </table>
-                </div>
+					<table>
+						<tr>
+							<th colspan="2">OPENING TIMES</th>
+						</tr>
+						<tr>
+							<td>Monday</td>
+							<td id="monday_1"></td>
+						</tr>
+						<tr>
+							<td>Tueasday</td>
+							<td id="tuesday_1"></td>
+						</tr>
+						<tr>
+							<td>Wednesday</td>
+							<td id="wednesday_1"></td>
+						</tr>
+						<tr>
+							<td>Thursday</td>
+							<td id="thursday_1"></td>
+						</tr>
+						<tr>
+							<td>Friday</td>
+							<td id="friday_1"></td>
+						</tr>
+						<tr>
+							<td>Saturday</td>
+							<td id="saturday_1"></td>
+						</tr>
+						<tr>
+							<td>Sunday</td>
+							<td id="sunday_1"></td>
+						</tr>
+					</table>
+				</div>
 
-            </div>
-            <div class="map" id="map_1"></div>
-        </div>
-
-
-        <!-- Start box -->
-        <div class="shops" id="three">
-            <div class="shopName">
-                <label for="rotate_2">
-                    <input type="checkbox" id="rotate_2" onclick="showMoreDetails_2();">
-                    <img alt="more" id="moreInfoImageButton_2" src="../img/more3.png" title="More">
-                </label>
-
-                <p class="locationName" id="locationName_2"></p>
-                <p class="locationDistance" id="locationDistance_2"></p>
-            </div>
-
-            <div class="info" id="info_2">
-                <div class="infoExtra1">
-                    <p id="street_2"></p>
-                    <p id="city_2"></p>
-                    <p id="postcode_2"></p>
-                    <p id="telephone_2"></p>
-                    <p id="openNow_2"></p><!-- need to create function for open now-->
-                </div>
-                <div class="infoExtra2">
-                    <table>
-                        <tr>
-                            <th colspan="2">FACILITIES</th>
-                        </tr>
-                        <tr>
-                            <td>Wi-fi</td>
-                            <td id="wifi_2"></td>
-                        </tr>
-                        <tr>
-                            <td>Delivery</td>
-                            <td id="delivery_2"></td>
-                        </tr>
-                        <tr>
-                            <td>Seat</td>
-                            <td id="seat_2"></td>
-                        </tr>
-                    </table>
-
-                    <table>
-                        <tr>
-                            <th colspan="2">OPENING TIMES</th>
-                        </tr>
-                        <tr>
-                            <td>Monday</td>
-                            <td id="monday_2"></td>
-                        </tr>
-                        <tr>
-                            <td>Tueasday</td>
-                            <td id="tuesday_2"></td>
-                        </tr>
-                        <tr>
-                            <td>Wednesday</td>
-                            <td id="wednesday_2"></td>
-                        </tr>
-                        <tr>
-                            <td>Thursday</td>
-                            <td id="thursday_2"></td>
-                        </tr>
-                        <tr>
-                            <td>Friday</td>
-                            <td id="friday_2"></td>
-                        </tr>
-                        <tr>
-                            <td>Saturday</td>
-                            <td id="saturday_2"></td>
-                        </tr>
-                        <tr>
-                            <td>Sunday</td>
-                            <td id="sunday_2"></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="map" id="map_2"></div>
-        </div>
+			</div>
+			<div class="map" id="map_1"></div>
+		</div>
 
 
-        <!-- Start box -->
-        <div class="shops" id="four">
-            <div class="shopName">
-                <label for="rotate_3">
-                    <input type="checkbox" id="rotate_3" onclick="showMoreDetails_3();">
-                    <img alt="more" id="moreInfoImageButton_3" src="../img/more3.png" title="More">
-                </label>
+		<!-- Start box -->
+		<div class="shops" id="three">
+			<div class="shopName">
+				<label for="rotate_2">
+					<input type="checkbox" id="rotate_2" onclick="showMoreDetails_2();">
+					<img alt="more" id="moreInfoImageButton_2" src="../img/more3.png" title="More">
+				</label>
 
-                <p class="locationName" id="locationName_3"></p>
-                <p class="locationDistance" id="locationDistance_3"></p>
-            </div>
+				<p class="locationName" id="locationName_2"></p>
+				<p class="locationDistance" id="locationDistance_2"></p>
+			</div>
 
-            <div class="info" id="info_3">
-                <div class="infoExtra1">
-                    <p id="street_3"></p>
-                    <p id="city_3"></p>
-                    <p id="postcode_3"></p>
-                    <p id="telephone_3"></p>
-                    <p id="openNow_3"></p><!-- need to create function for open now-->
-                </div>
-                <div class="infoExtra2">
-                    <table>
-                        <tr>
-                            <th colspan="2">FACILITIES</th>
-                        </tr>
-                        <tr>
-                            <td>Wi-fi</td>
-                            <td id="wifi_3"></td>
-                        </tr>
-                        <tr>
-                            <td>Delivery</td>
-                            <td id="delivery_3"></td>
-                        </tr>
-                        <tr>
-                            <td>Seat</td>
-                            <td id="seat_3"></td>
-                        </tr>
-                    </table>
+			<div class="info" id="info_2">
+				<div class="infoExtra1">
+					<p id="street_2"></p>
+					<p id="city_2"></p>
+					<p id="postcode_2"></p>
+					<p id="telephone_2"></p>
+					<p id="openNow_2"></p><!-- need to create function for open now-->
+				</div>
+				<div class="infoExtra2">
+					<table>
+						<tr>
+							<th colspan="2">FACILITIES</th>
+						</tr>
+						<tr>
+							<td>Wi-fi</td>
+							<td id="wifi_2"></td>
+						</tr>
+						<tr>
+							<td>Delivery</td>
+							<td id="delivery_2"></td>
+						</tr>
+						<tr>
+							<td>Seat</td>
+							<td id="seat_2"></td>
+						</tr>
+					</table>
 
-                    <table>
-                        <tr>
-                            <th colspan="2">OPENING TIMES</th>
-                        </tr>
-                        <tr>
-                            <td>Monday</td>
-                            <td id="monday_3"></td>
-                        </tr>
-                        <tr>
-                            <td>Tueasday</td>
-                            <td id="tuesday_3"></td>
-                        </tr>
-                        <tr>
-                            <td>Wednesday</td>
-                            <td id="wednesday_3"></td>
-                        </tr>
-                        <tr>
-                            <td>Thursday</td>
-                            <td id="thursday_3"></td>
-                        </tr>
-                        <tr>
-                            <td>Friday</td>
-                            <td id="friday_3"></td>
-                        </tr>
-                        <tr>
-                            <td>Saturday</td>
-                            <td id="saturday_3"></td>
-                        </tr>
-                        <tr>
-                            <td>Sunday</td>
-                            <td id="sunday_3"></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="map" id="map_3"></div>
-        </div>
-
-
-        <!-- Start box -->
-        <div class="shops" id="five">
-            <div class="shopName">
-                <label for="rotate_4">
-                    <input type="checkbox" id="rotate_4" onclick="showMoreDetails_4();">
-                    <img alt="more" id="moreInfoImageButton_4" src="../img/more3.png" title="More">
-                </label>
-
-                <p class="locationName" id="locationName_4"></p>
-                <p class="locationDistance" id="locationDistance_4"></p>
-            </div>
-
-            <div class="info" id="info_4">
-                <div class="infoExtra1">
-                    <p id="street_4"></p>
-                    <p id="city_4"></p>
-                    <p id="postcode_4"></p>
-                    <p id="telephone_4"></p>
-                    <p id="openNow_4"></p><!-- need to create function for open now-->
-                </div>
-                <div class="infoExtra2">
-                    <table>
-                        <tr>
-                            <th colspan="2">FACILITIES</th>
-                        </tr>
-                        <tr>
-                            <td>Wi-fi</td>
-                            <td id="wifi_4"></td>
-                        </tr>
-                        <tr>
-                            <td>Delivery</td>
-                            <td id="delivery_4"></td>
-                        </tr>
-                        <tr>
-                            <td>Seat</td>
-                            <td id="seat_4"></td>
-                        </tr>
-                    </table>
-
-                    <table>
-                        <tr>
-                            <th colspan="2">OPENING TIMES</th>
-                        </tr>
-                        <tr>
-                            <td>Monday</td>
-                            <td id="monday_4"></td>
-                        </tr>
-                        <tr>
-                            <td>Tueasday</td>
-                            <td id="tuesday_4"></td>
-                        </tr>
-                        <tr>
-                            <td>Wednesday</td>
-                            <td id="wednesday_4"></td>
-                        </tr>
-                        <tr>
-                            <td>Thursday</td>
-                            <td id="thursday_4"></td>
-                        </tr>
-                        <tr>
-                            <td>Friday</td>
-                            <td id="friday_4"></td>
-                        </tr>
-                        <tr>
-                            <td>Saturday</td>
-                            <td id="saturday_4"></td>
-                        </tr>
-                        <tr>
-                            <td>Sunday</td>
-                            <td id="sunday_4"></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="map" id="map_4"></div>
-        </div>
+					<table>
+						<tr>
+							<th colspan="2">OPENING TIMES</th>
+						</tr>
+						<tr>
+							<td>Monday</td>
+							<td id="monday_2"></td>
+						</tr>
+						<tr>
+							<td>Tueasday</td>
+							<td id="tuesday_2"></td>
+						</tr>
+						<tr>
+							<td>Wednesday</td>
+							<td id="wednesday_2"></td>
+						</tr>
+						<tr>
+							<td>Thursday</td>
+							<td id="thursday_2"></td>
+						</tr>
+						<tr>
+							<td>Friday</td>
+							<td id="friday_2"></td>
+						</tr>
+						<tr>
+							<td>Saturday</td>
+							<td id="saturday_2"></td>
+						</tr>
+						<tr>
+							<td>Sunday</td>
+							<td id="sunday_2"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="map" id="map_2"></div>
+		</div>
 
 
+		<!-- Start box -->
+		<div class="shops" id="four">
+			<div class="shopName">
+				<label for="rotate_3">
+					<input type="checkbox" id="rotate_3" onclick="showMoreDetails_3();">
+					<img alt="more" id="moreInfoImageButton_3" src="../img/more3.png" title="More">
+				</label>
+
+				<p class="locationName" id="locationName_3"></p>
+				<p class="locationDistance" id="locationDistance_3"></p>
+			</div>
+
+			<div class="info" id="info_3">
+				<div class="infoExtra1">
+					<p id="street_3"></p>
+					<p id="city_3"></p>
+					<p id="postcode_3"></p>
+					<p id="telephone_3"></p>
+					<p id="openNow_3"></p><!-- need to create function for open now-->
+				</div>
+				<div class="infoExtra2">
+					<table>
+						<tr>
+							<th colspan="2">FACILITIES</th>
+						</tr>
+						<tr>
+							<td>Wi-fi</td>
+							<td id="wifi_3"></td>
+						</tr>
+						<tr>
+							<td>Delivery</td>
+							<td id="delivery_3"></td>
+						</tr>
+						<tr>
+							<td>Seat</td>
+							<td id="seat_3"></td>
+						</tr>
+					</table>
+
+					<table>
+						<tr>
+							<th colspan="2">OPENING TIMES</th>
+						</tr>
+						<tr>
+							<td>Monday</td>
+							<td id="monday_3"></td>
+						</tr>
+						<tr>
+							<td>Tueasday</td>
+							<td id="tuesday_3"></td>
+						</tr>
+						<tr>
+							<td>Wednesday</td>
+							<td id="wednesday_3"></td>
+						</tr>
+						<tr>
+							<td>Thursday</td>
+							<td id="thursday_3"></td>
+						</tr>
+						<tr>
+							<td>Friday</td>
+							<td id="friday_3"></td>
+						</tr>
+						<tr>
+							<td>Saturday</td>
+							<td id="saturday_3"></td>
+						</tr>
+						<tr>
+							<td>Sunday</td>
+							<td id="sunday_3"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="map" id="map_3"></div>
+		</div>
 
 
-    </div>
-    <div id="footer">
-        <div id="one">
-            <ul id="footer_left">
-                <li><a href="main.html"> Home</a></li>
-                <li><a href="product.html"> Products</a> </li>
-                <li><a href="location.html"> Stores</a> </li>
-                <li><a href="job.html"> Jobs</a></li>
-                <li><a href="contact.html"> Contact us</a></li>
-            </ul>
-        </div>
-        <div id="footer_right">
-            <p id="followUs">follow us
-                <a href="https://www.facebook.com" target="_blank"><img class="logo" src="../img/logo/facebook.png"
-                        alt="Facebook"></a>
-                <a href="https://www.twitter.com" target="_blank"><img class="logo" src="../img/logo/twitter.png"
-                        alt="Twitter"></a>
-                <a href="https://www.instagram.com" target="_blank"><img class="logo" src="../img/logo/instagram.jpg"
-                        alt="Instagram"></a></p>
-        </div>
+		<!-- Start box -->
+		<div class="shops" id="five">
+			<div class="shopName">
+				<label for="rotate_4">
+					<input type="checkbox" id="rotate_4" onclick="showMoreDetails_4();">
+					<img alt="more" id="moreInfoImageButton_4" src="../img/more3.png" title="More">
+				</label>
 
-        <div id="copyright">
-            <small> &#9400; Coffee ltd. 2019. All rights reserved</small>
-        </div>
+				<p class="locationName" id="locationName_4"></p>
+				<p class="locationDistance" id="locationDistance_4"></p>
+			</div>
+
+			<div class="info" id="info_4">
+				<div class="infoExtra1">
+					<p id="street_4"></p>
+					<p id="city_4"></p>
+					<p id="postcode_4"></p>
+					<p id="telephone_4"></p>
+					<p id="openNow_4"></p><!-- need to create function for open now-->
+				</div>
+				<div class="infoExtra2">
+					<table>
+						<tr>
+							<th colspan="2">FACILITIES</th>
+						</tr>
+						<tr>
+							<td>Wi-fi</td>
+							<td id="wifi_4"></td>
+						</tr>
+						<tr>
+							<td>Delivery</td>
+							<td id="delivery_4"></td>
+						</tr>
+						<tr>
+							<td>Seat</td>
+							<td id="seat_4"></td>
+						</tr>
+					</table>
+
+					<table>
+						<tr>
+							<th colspan="2">OPENING TIMES</th>
+						</tr>
+						<tr>
+							<td>Monday</td>
+							<td id="monday_4"></td>
+						</tr>
+						<tr>
+							<td>Tueasday</td>
+							<td id="tuesday_4"></td>
+						</tr>
+						<tr>
+							<td>Wednesday</td>
+							<td id="wednesday_4"></td>
+						</tr>
+						<tr>
+							<td>Thursday</td>
+							<td id="thursday_4"></td>
+						</tr>
+						<tr>
+							<td>Friday</td>
+							<td id="friday_4"></td>
+						</tr>
+						<tr>
+							<td>Saturday</td>
+							<td id="saturday_4"></td>
+						</tr>
+						<tr>
+							<td>Sunday</td>
+							<td id="sunday_4"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="map" id="map_4"></div>
+		</div>
+	</div>
+	<footer id="footer">
+		<div id="footer_right">
+			<p id="followUs">Follow us
+				<a href="https://www.facebook.com" target="_blank"><img class="logo" src="../img/logo/facebook.png" alt="Facebook"></a>
+				<a href="https://www.twitter.com" target="_blank"><img class="logo" src="../img/logo/twitter.png" alt="Twitter"></a>
+				<a href="https://www.instagram.com" target="_blank"><img class="logo" src="../img/logo/instagram.jpg" alt="Instagram"></a>
+			</p>
+		</div>
+		<div id="copyright">
+			<small>&#9400; Coffee ltd. 2019. All rights reserved</small>
+		</div>
+	</footer>
 </body>
 
 </html>
