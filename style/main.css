@@ -1,185 +1,188 @@
-* {
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    overflow-x: hidden;
-}
-html, body{
-    width: 100%;
-    overflow-x: hidden;
-}
-
-
+/* Main section */
 #main {
-    /*first picture*/
-    position: relative;
-    top: 22px;
-    margin: 0 auto;
-    width: 97.5%;
-    max-width: 97.5%;
-   height: 80vh;
-    background: url("../img/bean3.jpg");
-    background-position: left top;
-    background-repeat:repeat-x;
-    background-attachment: fixed;
-    background-size: contain;
+	position: relative;
+	top: 22px;
+	margin: 0 auto;
+	width: 97.5%;
+	max-width: 97.5%;
+	height: 80vh;
+	background: url("../img/bean3.jpg");
+	background-position: left top;
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-size: contain;
 }
 
 #main p {
-    position: -webkit-sticky;
-    position: sticky;
-    margin: 0;
-    padding: 20px;
-    color: whitesmoke !important;
-    font-family: myFont;
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
-    font-size: 6vw;
-    width: 97.5%;
-    vertical-align: middle;
-    text-align: center;
-    top: 5%;
-    bottom: 0;
-    left: 25%;
+	position: -webkit-sticky;
+	position: sticky;
+	margin: 0;
+	padding: 20px;
+	color: whitesmoke !important;
+	font-family: myFont;
+	transform: rotate(-10deg);
+	font-size: 6vw;
+	width: 97.5%;
+	vertical-align: middle;
+	text-align: center;
+	top: 5%;
+	left: 25%;
 }
 
 #main p:hover {
-    text-shadow: 2px 2px 8px whitesmoke;
+	text-shadow: 2px 2px 8px whitesmoke;
 }
 
+/* Slogan section */
 #slogan {
-    /*first white box*/
-    position: static;
-    height: 60vh;
-    text-align: center;
-    font-family: myFont;
-    margin: 0 auto;
-    width: 97%;
-    background-color: white;
-    z-index: 1;
+	position: static;
+	height: 60vh;
+	text-align: center;
+	font-family: myFont;
+	margin: 0 auto;
+	width: 97%;
+	background-color: white;
+	z-index: 1;
 }
 
 #slogan #slogan_name {
-    vertical-align: middle;
-    font-size: 9vw;;
-    margin: 0px;
-    padding: 0px;
-    text-shadow: 1px 1px 5px rgba(36, 36, 36, 0.801);
+	vertical-align: middle;
+	font-size: 9vw;
+	margin: 0px;
+	padding: 0px;
+	text-shadow: 1px 1px 5px rgba(36, 36, 36, 0.801);
 }
 
 #slogan #slogan_text {
-    margin: 0px;
-    padding: 0px;
-    font-size: 4vw;
-    text-shadow: 1px 1px rgba(36, 36, 36, 0.801);
-    color: rgba(36, 36, 36, 0.801);
+	margin: 0px;
+	padding: 0px;
+	font-size: 4vw;
+	text-shadow: 1px 1px rgba(36, 36, 36, 0.801);
+	color: rgba(36, 36, 36, 0.801);
 }
 
+/* Coffee section */
 #coffee {
-    position: static;
-    /*min-height: 384px;
-    height: 384px;*/
-    height: 100vh;
-    width: 97.5%;
-    text-align: center;
-    font-family: myFont;
-    font-size: 4vw;
-    color: white;
-    text-shadow: 3px 3px 5px black;
-    margin: 0 auto;
-    background: url("../img/coffee.jpg") repeat-x;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: contain;
+	position: static;
+	height: 100vh;
+	width: 97.5%;
+	text-align: center;
+	font-family: myFont;
+	font-size: 4vw;
+	color: white;
+	text-shadow: 3px 3px 5px black;
+	margin: 0 auto;
+	background: url("../img/coffee.jpg") repeat-x;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: contain;
 }
 
 #coffee p {
-    margin: 0 auto;
-    padding-top: 20px;
+	margin: 0 auto;
+	padding-top: 20px;
 }
 
+/* Food slogan section */
 #slogan_food {
-    position: static;
-    padding: auto;
-    height: 50vh;
-    text-align: center;
-    vertical-align: middle;
-    font-family: myFont;
-    font-size: 9vw;
-    text-shadow: 1p1x 1px 5px black;
-    margin: 0 auto;
-    width: 97%;
-    background-color: white;
-    z-index: 1;
-    margin-bottom: 5vh;
-}
-#slogan_food p{
-    margin: 0 auto;
+	position: static;
+	padding: auto;
+	height: 50vh;
+	text-align: center;
+	vertical-align: middle;
+	font-family: myFont;
+	font-size: 9vw;
+	text-shadow: 1px 1px 5px black;
+	margin: 0 auto;
+	width: 97%;
+	background-color: white;
+	z-index: 1;
+	margin-bottom: 5vh;
 }
 
+#slogan_food p {
+	margin: 0 auto;
+}
+
+/* Bar section */
 #bar {
-    position: static;
-    height: 100vh;
-    margin: 0 auto;
-    width: 97.5%;
-    background: url("../img/bar.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: contain;
+	position: static;
+	height: 100vh;
+	margin: 0 auto;
+	width: 97.5%;
+	background: url("../img/bar.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
+/* Food section */
 #food {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    -ms-flex-line-pack:stretch;
-        align-content:stretch;
-    position: static;
-    margin:0 auto;
-    width: 97%;
-    text-align: center;
-    z-index: 1;
-    background-color: white;
-    font-family: myFont;
-    color: black;
-    text-shadow: 1px 1px 5px black;
-    margin-bottom: 60px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	-webkit-box-align: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
+	position: static;
+	margin: 0 auto;
+	width: 97%;
+	text-align: center;
+	z-index: 1;
+	background-color: white;
+	font-family: myFont;
+	color: black;
+	text-shadow: 1px 1px 5px black;
+	margin-bottom: 60px;
 }
-
-
 
 #food p {
-    margin: 0px;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 100%;
-            flex: 1 100%;
+	margin: 0px;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 100%;
+	flex: 1 100%;
 }
 
 #food figure {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-    overflow: hidden;
-    text-align: center;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    border-radius: 4px;
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    font-size: x-large;
+	flex: 1 1 300px; /* Allow flex to grow, shrink, and set base size */
+	max-width: 300px;
+	text-align: center;
+	margin: 10px;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	font-size: x-large;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+	#main {
+		height: auto;
+		background-size: cover;
+	}
+
+	#slogan, #slogan_food {
+		height: auto;
+		font-size: 8vw;
+	}
+
+	#food {
+		flex-direction: column; /* Stack items on smaller screens */
+	}
+
+	#food figure {
+		flex: 1 1 100%;
+		max-width: 100%;
+	}
 }

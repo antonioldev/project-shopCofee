@@ -1,0 +1,192 @@
+﻿* {
+	font-family: myFont2;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+body, html {
+	width: 100%;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+#top, #left {
+	position: fixed;
+	-webkit-box-shadow: 5px 5px 30px grey;
+	box-shadow: 5px 5px 30px grey;
+}
+
+#right {
+	position: fixed;
+	float: right;
+	right: 0px;
+}
+
+#left, #right {
+	top: 30px;
+	bottom: 0px;
+	opacity: 0.95;
+	height: auto;
+	width: 2%;
+	z-index: 4;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(gray), to(#0b0b0b));
+	background-image: linear-gradient(gray, #0b0b0b);
+}
+
+#left {
+	left: 0;
+}
+
+#top {
+	top: 0;
+	left: 0;
+	margin: 0 auto;
+	padding: 0;
+	height: 30px;
+	width: 100%;
+	max-width: 100%;
+	background-color: grey;
+	opacity: 0.95;
+	z-index: 5;
+}
+
+#top ul {
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	margin-left: 2%;
+	padding: 0;
+}
+
+#top ul li {
+	float: left;
+	margin-left: 3px;
+	width: 120px;
+	overflow: hidden;
+}
+
+#top ul li:first-child {
+	width: 50px;
+	visibility: hidden;
+}
+
+#top ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 3px;
+	text-decoration: none;
+	border: 1px solid white;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	font-family: myFont2;
+}
+
+#top ul li a:hover {
+	color: black;
+	-webkit-animation-name: menu;
+	animation-name: menu;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	background-color: grey;
+}
+
+@-webkit-keyframes menu {
+	from {
+		background-color: white;
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+	to {
+		background-color: grey;
+		-webkit-transform: scale(1.2, 1.1);
+		transform: scale(1.2, 1.1);
+	}
+}
+
+@keyframes menu {
+	from {
+		background-color: white;
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+	to {
+		background-color: grey;
+		-webkit-transform: scale(1.2, 1.1);
+		transform: scale(1.2, 1.1);
+	}
+}
+
+@font-face {
+	font-family: myFont;
+	src: url("../font/Calligraffiti.ttf");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: myFont2;
+	src: url("../font/ConcertOne-Regular.ttf");
+	font-weight: bold;
+}
+
+#footer {
+	position: fixed;
+	display: flex;
+	flex-direction: column; /* Stack the sections vertically */
+	justify-content: center; /* Center content vertically */
+	align-items: center; /* Center horizontally */
+	bottom: 0;
+	width: 100%;
+	padding: 10px;
+	background-image: linear-gradient(#0b0b0b, black);
+	opacity: 0.95;
+	z-index: 5;
+}
+
+#footer_right {
+	display: flex; /* Use flexbox for right alignment */
+	justify-content: flex-end; /* Align to the right */
+	align-items: center;
+	margin-bottom: 5px; /* Space between footer_right and copyright */
+}
+
+#footer_right p {
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: myFont;
+}
+
+#footer_right a {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#footer_right .logo {
+	width: 25px;
+	height: 25px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#footer_right .logo:hover {
+	border: 1px solid white;
+}
+
+#copyright {
+	text-align: center;
+	color: white;
+	width: 100%;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}

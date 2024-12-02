@@ -1,0 +1,196 @@
+#logo {
+	position: fixed;
+	top: 30%;
+	left: 45%;
+	opacity: 1;
+	z-index: 2;
+	width: 128px;
+	height: 128px;
+	animation-name: rotateLoading;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+	animation-duration: 700ms;
+	animation-timing-function: linear;
+}
+
+@keyframes rotateLoading {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+#main {
+	position: relative;
+	font-family: myFont;
+	text-shadow: 2px 2px 8px whitesmoke;
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 97%;
+	height: 363px;
+	background: url("../img/coffeehouse.jpg");
+	box-shadow: 1px 1px 20px black inset;
+	text-align: center;
+	margin-bottom: 20px;
+	color: white;
+	user-select: none;
+}
+
+#main p {
+	position: absolute;
+	display: block;
+	bottom: 25px;
+	left: 0;
+	right: 0;
+	font-size: 20px;
+}
+
+#main p:first-child {
+	font-size: 50px;
+}
+
+.shops {
+	position: static;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: auto;
+	border: solid 4px;
+	border-image-source: linear-gradient(white, grey);
+	border-image-slice: 1 5 5 1;
+	color: black;
+	margin-bottom: 20px;
+	background-image: linear-gradient(white, #EEEDED);
+	text-align: center;
+}
+
+#five {
+	margin-bottom: 150px;
+}
+
+.info {
+	clear: both;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+	width: 100%;
+	height: fit-content;
+	margin-bottom: 10px;
+}
+
+#info_4 {
+	margin-bottom: 100px;
+}
+
+.shopName {
+	position: static;
+	height: 120px;
+	width: inherit;
+	margin-bottom: 5px;
+	text-align: center;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.locationName {
+	position: absolute;
+	text-align: center;
+	font-size: 4vh;
+	margin-bottom: 0;
+	padding-top: 10px;
+	width: inherit;
+	color: #6f4e37;
+	text-shadow: #6f4e37 1px 1px;
+}
+
+.locationDistance {
+	position: absolute;
+	text-align: center;
+	left: 35%;
+	width: 30%;
+}
+
+.shopName img[id^="moreInfoImageButton_"] {
+	position: absolute;
+	margin-top: 25px;
+	margin-left: 30%;
+	width: 40px;
+	height: 40px;
+	z-index: 1;
+	transition: all 0.50s;
+}
+
+input[id^="rotate_"] {
+	position: absolute;
+	transform: initial;
+	float: left;
+	z-index: -1;
+	margin-top: 25px;
+	margin-left: 30%;
+	width: 40px;
+	height: 40px;
+}
+
+input[id^="rotate_"]:checked + img[id^="moreInfoImageButton_"] {
+	transform: rotate(180deg);
+}
+
+.info, .map {
+	display: none;
+}
+
+.infoExtra2 table {
+	display: inline;
+	table-layout: fixed;
+	text-align: center;
+}
+
+.infoExtra2 table td {
+	width: 25%;
+}
+
+th {
+	font-size: large;
+	color: #6f4e37;
+	text-shadow: #6f4e37 0.5px 0.5px;
+}
+
+.map {
+	position: static;
+	width: 100%;
+}
+
+.infoExtra1 {
+	text-align: center;
+	font-size: 20px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.infoExtra1 p {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.infoExtra2 {
+	height: 100%;
+	margin: 0 auto;
+}
+
+.info {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.info div {
+	flex: 1 100%;
+}
+
