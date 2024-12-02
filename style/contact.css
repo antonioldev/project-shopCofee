@@ -1,18 +1,3 @@
-body, html {
-	width: 100%;
-	overflow-x: hidden;
-	
-}
-
-body {
-	font-family: myFont;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	position: static;
-}
-
 #contactUs {
 	margin-top: 100px;
 	width: 80%;

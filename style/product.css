@@ -1,8 +1,3 @@
-html {
-	scroll-behavior: smooth;
-	overflow-x: hidden;
-}
-
 #mainDiv {
 	margin: 0 auto;
 	border: solid 4px;
